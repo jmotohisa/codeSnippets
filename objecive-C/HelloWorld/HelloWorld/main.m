@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "RandomBytes.h"
+#import "NSString+MD5.h"
+#import "NSData+MD5.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -20,6 +22,17 @@ int main(int argc, const char * argv[]) {
                                            encoding:NSUTF8StringEncoding]);
         NSString *fileName = [dt base64EncodedStringWithOptions:0];
         NSLog(@"%@",fileName);
+        
+        // NSString+MD5
+        
+        NSString *str = @"String to convert to MD5";
+        NSLog(@"MD5 hash of string: %@", [str MD5]);
+
+        // NSdata+MD5
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"txt"];
+        NSData *nsData = [NSData dataWithContentsOfFile:path];
+        if (nsData) 
+            NSLog(@"MD5 hash of file: %@", [nsData MD5]);
     }
     return 0;
 }

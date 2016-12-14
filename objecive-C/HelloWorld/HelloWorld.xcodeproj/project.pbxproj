@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625F16CB1E01F0B800C0EB0E /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F16CA1E01F0B800C0EB0E /* NSData+MD5.m */; };
+		625F16CE1E01F39500C0EB0E /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F16CD1E01F39500C0EB0E /* NSString+MD5.m */; };
 		62CAC83B1DFC250B00C144A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CAC83A1DFC250B00C144A4 /* main.m */; };
 		62CAC8421DFD6DB400C144A4 /* RandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CAC8411DFD6DB400C144A4 /* RandomBytes.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		625F16C91E01F0B800C0EB0E /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MD5.h"; path = "../../NSData+MD5/NSData+MD5.h"; sourceTree = "<group>"; };
+		625F16CA1E01F0B800C0EB0E /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MD5.m"; path = "../../NSData+MD5/NSData+MD5.m"; sourceTree = "<group>"; };
+		625F16CC1E01F39500C0EB0E /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		625F16CD1E01F39500C0EB0E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		62CAC82D1DFC140300C144A4 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CAC83A1DFC250B00C144A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62CAC8401DFD6DB400C144A4 /* RandomBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomBytes.h; path = ../../randamBytes/RandomBytes.h; sourceTree = "<group>"; };
@@ -60,6 +66,10 @@
 		62CAC82F1DFC140300C144A4 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				625F16CC1E01F39500C0EB0E /* NSString+MD5.h */,
+				625F16CD1E01F39500C0EB0E /* NSString+MD5.m */,
+				625F16C91E01F0B800C0EB0E /* NSData+MD5.h */,
+				625F16CA1E01F0B800C0EB0E /* NSData+MD5.m */,
 				62CAC8401DFD6DB400C144A4 /* RandomBytes.h */,
 				62CAC8411DFD6DB400C144A4 /* RandomBytes.m */,
 				62CAC83A1DFC250B00C144A4 /* main.m */,
@@ -124,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				62CAC8421DFD6DB400C144A4 /* RandomBytes.m in Sources */,
+				625F16CB1E01F0B800C0EB0E /* NSData+MD5.m in Sources */,
+				625F16CE1E01F39500C0EB0E /* NSString+MD5.m in Sources */,
 				62CAC83B1DFC250B00C144A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
