@@ -1,6 +1,6 @@
 //
 //  main.m
-//  HelloWorld
+//  HelloWorld: test ground for various implementations
 //
 //  Created by Junichi Motohisa on 2016/12/10.
 //  Copyright © 2016年 Hokkaido University. All rights reserved.
@@ -24,9 +24,10 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@",fileName);
         
         // NSString+MD5
-        
         NSString *str = @"String to convert to MD5";
-        NSLog(@"MD5 hash of string: %@", [str MD5]);
+        NSString *strMD5 = [str MD5];
+        NSLog(@"MD5 hash of string: %@", strMD5);
+        NSLog(@"Part of string %@",[strMD5 substringWithRange:NSMakeRange(0, 6)]);
 
         // NSdata+MD5
         NSString *path = [[NSBundle mainBundle] pathForResource:@"TestFile" ofType:@"txt"];
